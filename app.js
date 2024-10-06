@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
-const authRoutes = require("../backend/router/auth")
+const authRoutes = require('./router/auth')
 const postmodel = require("./models/postmodel");
 const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");

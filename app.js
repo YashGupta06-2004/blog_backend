@@ -130,7 +130,7 @@ app.get("/logout", (req,res) => {
     return res.json("success");
 })
 
-const PORT = process.env.BASE_URL;
+const PORT = process.env.BASE_URL || 5000;
 app.listen(process.env.BASE_URL, () => {
     console.log(`Server is running on port ${process.env.BASE_URL}`);
 });

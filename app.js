@@ -17,7 +17,8 @@ const app = express();
 app.use(cors({
     origin: ['http://localhost:3001', 'https://yashgupta06-2004.github.io'], // Allow requests from this origin
     methods: ['GET', 'POST','PUT','DELETE'], // Allowed methods
-    credentials: true // Allow credentials if needed
+    credentials: true ,// Allow credentials if needed
+    header:("Access-Control-Allow-Origin: *")// Or specify the origin
 }));
 
 // Body parsing middleware

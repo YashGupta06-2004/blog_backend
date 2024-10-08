@@ -5,12 +5,14 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon app.js"
+    "dev":"nodemon app.js",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
+  "proxy": "http://localhost:3001",
   "description": "",
-  "dependencies": {
+  "dependencies":{
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
